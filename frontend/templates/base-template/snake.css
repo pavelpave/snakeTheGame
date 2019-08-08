@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    max-width: 100%;
+    font-family: fantasy,cursive;
+    margin: 0;
+}
+.wrapper{
+    width: 80%;
+    position: relative;
+    margin: 7em auto;
+    background: url(img/tumblr_otoeb6jNNZ1uar2v2o1_500.gif) no-repeat;
+    background-size: cover;
+}
+.game{
+    text-align: center;
+}
+.game h1{
+    font-size: 70pt;
+    color: #5acc65;
+}
+.record{
+    color: #fff;
+    font-size: 18pt;
+}
+.write-name{
+    width: 16em;
+    height: 4em;
+    border-radius: 30px;
+    border: none;
+    
+    background: linear-gradient(45deg, #5accbf, #5acc65);
+    color: #fff;
+    font-size: 15pt;
+    padding-left: 2em;
+}
+input.write-name::placeholder{
+    color: #fff;
+}
+.play{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #23469e, #a85acc);
+    box-shadow: 5px 5px 15px #000;
+    margin: 3em auto;
+    border-radius: 80%;
+    
+}
+.additionally{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.full-screen{
+    cursor: pointer;
+}
