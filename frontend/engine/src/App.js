@@ -23,7 +23,7 @@ class App extends React.Component {
         <div className="wrap_project">
           <div className="navigations_wrap" />
           <div className="canvas_wrap">
-            <canvas id="canvas" onKeyDown={this.controller}>
+            <canvas id="canvas" onKeyDown={this.controller} >
             
             </canvas>
           </div>
