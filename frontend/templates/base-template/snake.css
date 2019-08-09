@@ -11,7 +11,7 @@ body{
     height: 100vh;
 }
 .wrapper-game{
-    background: url(img/tumblr_otoeb6jNNZ1uar2v2o1_500.gif) no-repeat;
+    background: url(img/here-comes-the-boom640px.gif) no-repeat;
     background-size: cover;
 }
 .conteiner{
@@ -71,4 +71,5 @@ input.write-name::placeholder{
 }
 .menu{
     width: 30vh;
+    background: #f0ebeb;
 }
