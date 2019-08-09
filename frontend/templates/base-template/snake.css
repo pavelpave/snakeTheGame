@@ -22,7 +22,7 @@ body{
 }
 .game{
     text-align: center;
-    height: 100vh;
+    
 }
 .game h1{
     font-size: 50pt;
@@ -70,5 +70,5 @@ input.write-name::placeholder{
     border: none;
 }
 .menu{
-    width: 30%;
+    width: 30vh;
 }
