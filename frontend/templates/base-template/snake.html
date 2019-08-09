@@ -10,32 +10,22 @@
     <link rel='stylesheet' type='text/css' media='screen' href='snake.css'>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-                <a class="navbar-brand" href="#">Serpentine</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#hidd" aria-controls="hidd"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    MENU
-                </button>    
-                <div class="collapse navbar-collapse justify-content-center" id="hidd">
+<div class="wrapper">
+    <div class="menu">
+        <nav class="navbar flex-column">
+                <a class="navbar-brand" href="#">Serpentine</a>  
+                <div class="conteiner">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                        <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                                   SomeText
-                                </a>
-                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">SomeText</a>
-                                    <a class="dropdown-item" href="#">SomeText</a>
-                                </div>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">someText</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">someText</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
                     </ul>
                 </div>
             </nav>
-    <div class="wrapper">
+        </div>
+        <div class="wrapper-game">
         <div class="game">
            </svg>
             <h1>Serpentine</h1>
@@ -49,10 +39,11 @@
             </div>
             <div class="additionally">
                 <a class="color" href="#"><img src="img/RGB_Circle_1-80_icon-icons.com_57282.png"></a>
-                <button type="submit" class="full-screen"><img src="img/full-screen-interface-symbol-of-four-arrows-in-square-button_icon-icons.com_73244.png"></button>
+                <button type="submit" class="full-screen"></button>
             </div>
         </div>
     </div>
+</div>
     <script src='snake.js'></script>
 </body>
 </html>
