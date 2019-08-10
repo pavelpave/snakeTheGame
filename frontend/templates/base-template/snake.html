@@ -4,27 +4,36 @@
     <meta charset='utf-8'>
     <title>Serpentine</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='snake.css'>
+    
 </head>
 <body>
 <div class="wrapper">
     <div class="menu">
         <nav class="navbar flex-column">
-                <a class="navbar-brand" href="#">Serpentine</a>  
-                <div class="conteiner">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">someText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">someText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">SomeText</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            <a class="navbar-brand" href="#">Serpentine</a>
+            <div class="conteiner">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                    <li class="nav-item rule-game"><a href="#" class="nav-link">Правила игры</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контакты для связи</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                           <a href="#" class="dropdown-item">/vk/</a>
+                           <a href="#" class="dropdown-item">/another contacts/</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Some link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
         <div class="wrapper-game">
         <div class="game">
            </svg>
