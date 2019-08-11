@@ -1,4 +1,5 @@
 import React from "react";
+import Menu  from './app/base-menu'
 import "./assets/css/style.css";
 class App extends React.Component {
   constructor(props) {
@@ -37,6 +38,13 @@ class App extends React.Component {
       gtx.clearRect( 0 , 0 , snake.width , snake.height);
       gtx.fillStyle = '#fff';
       // цикл открисовывающий масив тела 
+      // 	sBody.forEach(function(el, i){
+// 		if (el.x == sBody[sBody.length - 1].x 
+//    && el.y == sBody[sBody.length - 1].y 
+//    && i < sBody.length - 1) 
+//    sBody.splice(0,sBody.length-1), sBody = [{x:0,y:0}], d = 1; //Проверка на столкновение
+// 	});
+
       if(snake.height <= this.state.y){
         this.setState({ y :  0 })
       }
@@ -51,21 +59,25 @@ class App extends React.Component {
       }
       switch(this.state.direction){
         case 1:
-            this.setState({ x : (this.state.x  - this.state.speed) , y :  this.state.y })
-            break
-        case 2:
-            this.setState({ x : this.state.x , y : (this.state.y  - this.state.speed) })
-            break
-        case 3:
             this.setState({ x : (this.state.x  + this.state.speed) , y :  this.state.y })
             break
-        case 4:
+        case 2:
             this.setState({ x : this.state.x , y : (this.state.y  + this.state.speed) })
+            break
+        case 3:
+            this.setState({ x : (this.state.x  - this.state.speed) , y : this.state.y })
+            break
+        case 4:
+            this.setState({ x : this.state.x , y : (this.state.y  - this.state.speed) })
             break
         default:
           break 
       }
+
       gtx.fillRect(this.state.x, this.state.y, this.state.size , this.state.size );	
+     this.state.sBody.map(( el , i  ) => {
+       gtx.fillRect( el.x -  (this.state.x - (i * this.state.size)), el.y -  (this.state.x - (i * this.state.size)), this.state.size , this.state.size );
+     })
     } , 1000 / 30 )
 
                             //     var rand = function (min, max) {k = Math.floor(Math.random() * (max - min) + min); return (Math.round( k / s) * s);}
@@ -86,9 +98,13 @@ class App extends React.Component {
 // 	g.fillRect(...a, s, s);
 // 	g.fillStyle = "#000";
 // 	sBody.forEach(function(el, i){
-// 		if (el.x == sBody[sBody.length - 1].x && el.y == sBody[sBody.length - 1].y && i < sBody.length - 1) sBody.splice(0,sBody.length-1), sBody = [{x:0,y:0}], d = 1; //Проверка на столкновение
+// 		if (el.x == sBody[sBody.length - 1].x 
+//    && el.y == sBody[sBody.length - 1].y 
+//    && i < sBody.length - 1) 
+//    sBody.splice(0,sBody.length-1), sBody = [{x:0,y:0}], d = 1; //Проверка на столкновение
 // 	});
-// 	var m = sBody[0], f = {x: m.x,y: m.y}, l = sBody[sBody.length - 1]; // сохраняем хвост и голову змейки
+// 	var m = sBody[0],
+//   f = {x: m.x,y: m.y}, l = sBody[sBody.length - 1]; // сохраняем хвост и голову змейки
 // 	if (d == 1)  f.x = l.x + s, f.y = Math.round(l.y / s) * s; //Если направление вправо, то тогда сохраняем Y, но меняем X на + s
 // 	if (d == 2) f.y = l.y + s, f.x = Math.round(l.x / s) * s; // Если направление вниз, то сохраняем X, но меняем Y на + s
 // 	if (d == 3) f.x = l.x - s, f.y = Math.round(l.y / s) * s; //Если направление влево, то сохраняем Y, но меняем X на -s
@@ -114,11 +130,11 @@ class App extends React.Component {
     return (
       <div>
         <div className="wrap_project">
-          <div className="navigations_wrap" />
-          <div className="canvas_wrap">
-          <p>123</p>
-            <canvas id="canvas" >
-            
+          <div className="navigations_wrap" >
+            <Menu />
+          </div>
+          <div className="canvas_wrap">      
+            <canvas id="canvas" >            
             </canvas>
           </div>
         </div>
