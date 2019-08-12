@@ -1,3 +1,113 @@
-.test{
-    color: red
+.menu{
+    margin: 0;
+    padding: 0 2em;
+    background: #f0ebeb;
+    height: 100vh;
+    padding-top: 30px;
+}
+a{
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 40px;
+}
+.wrapper-modes{
+    margin-top: 20px;
+    border-top: 5px solid black;
+    display: grid;
+    grid-template-columns: 10vh auto;
+}
+.modes-control{
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 1em;
+    padding-left: 0;
+}
+.modes-control button{
+    width: 72px;
+    height: 72px;
+    background: url(img/Menu_icon_icon-icons.com_71858.png);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.modes{
+    position: relative;
+    left: 0px;
+    margin-top: 20px;
+    text-align: center;
+    /* border-left: 5px solid black; */
+}
+.logo{
+    width: 64px;
+    height: 64px;
+    background: url(img/snake_38881.png);
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+.bg-logo{
+    width: 124px;
+    height: 124px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #b06d6d;
+    box-shadow: 0 0 7px #b06d6d;
+}
+.chat{
+    margin-top: 3em;
+    border: 1px solid black;
+    height: 30vh;
+}
+.wrapper-chat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.communication{
+    border-left: 1px solid black;
+    height: 30vh;
+}
+
+
+
+/*  */
+.usually{
+    background: url(img/62963crossedswords_109255.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.duel{
+    background: url(img/duel_38698.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.regulation{
+    background: url(img/cancelviewmodes_99683.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.options{
+    background: url(img/construction_project_plan_building_architect_design_develop-57_icon-icons.com_60216.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.report{
+    background: url(img/1492608052-16-gmail-email-mail-communication-message-service_83380.png);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
 }
