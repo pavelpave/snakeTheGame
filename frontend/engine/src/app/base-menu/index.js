@@ -27,10 +27,12 @@ export default class BaseMenu extends  React.Component {
                     </div>
                     <div className="chat">
                         <div className="wrapper-chat">
-                            <div className="list-chat"></div>
+                            <div className="hidden-chat">
+                                <button type="submit"></button>
+                            </div>
                             <div className="communication">
-                                <div></div>
-                                <input type="text"></input>
+                            <div className="window-chat"></div>
+                                <input type="text" placeholder="Напишите что нибудь"></input>
                             </div>
                         </div>
                     </div>

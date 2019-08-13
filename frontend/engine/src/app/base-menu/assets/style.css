@@ -4,6 +4,7 @@
     background: #f0ebeb;
     height: 100vh;
     padding-top: 30px;
+
 }
 a{
     display: block;
@@ -17,6 +18,8 @@ a{
     border-top: 5px solid black;
     display: grid;
     grid-template-columns: 10vh auto;
+    border-bottom: 5px solid black;
+    padding-bottom: 50px;
 }
 .modes-control{
     position: relative;
@@ -36,6 +39,8 @@ a{
     left: 0;
 }
 .modes{
+    /* opacity: 0; */
+    transition: all ease 1s;
     position: relative;
     left: 0px;
     margin-top: 20px;
@@ -60,19 +65,48 @@ a{
     box-shadow: 0 0 7px #b06d6d;
 }
 .chat{
-    margin-top: 3em;
-    border: 1px solid black;
+    margin-top: 1em;
     height: 30vh;
 }
 .wrapper-chat{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 7vh 43vh;
 }
 .communication{
-    border-left: 1px solid black;
     height: 30vh;
+    transition: all ease 1s; 
+    /* opacity: 0; */
 }
-
+.communication input{
+    height: 5vh;
+    width: 43vh;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 3px 3px 7px black;
+}
+.window-chat{
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    height: 25vh;
+    box-shadow: 0 3px 7px black;
+    border-bottom: none;
+}
+.hidden-chat{
+    position: relative;
+    
+}
+.hidden-chat button{
+    width: 72px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 72px;
+    background: url(img/right_icon-icons.com_61212.png);
+    border: none;
+    transform: rotate(180deg);
+    transition: all ease 1s; 
+}
 
 
 /*  */
