@@ -9,7 +9,8 @@ export default class BaseMenu extends  React.Component {
 
     render(){
         return(
-                <div className="menu">
+            <div className="menu">
+                <div className="page-one">
                     <div className="bg-logo">
                         <div className="logo"></div>
                     </div>
@@ -25,6 +26,15 @@ export default class BaseMenu extends  React.Component {
                             <a href="#"><span className="report"></span>Жалобы и предложения</a>
                         </div>
                     </div>
+                    <div className="check-menu">
+                        <div className="cricle active"></div>
+                        <div className="cricle"></div>
+                    </div>
+                </div>
+                <div className="page-two">
+                    <div className="bg-logo">
+                        <div className="logo"></div>
+                    </div>
                     <div className="chat">
                         <div className="wrapper-chat">
                             <div className="hidden-chat">
@@ -37,6 +47,7 @@ export default class BaseMenu extends  React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 

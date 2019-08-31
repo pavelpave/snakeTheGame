@@ -1,23 +1,21 @@
 .menu{
     margin: 0;
-    padding: 0 2em;
     background: #f0ebeb;
     height: 100vh;
-    padding-top: 30px;
-
+    position: relative;
 }
 a{
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     color: #000;
     margin-top: 40px;
 }
 .wrapper-modes{
     margin-top: 20px;
-    border-top: 5px solid black;
     display: grid;
     grid-template-columns: 10vh auto;
+    border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding-bottom: 50px;
 }
@@ -43,7 +41,7 @@ a{
     transition: all ease 1s;
     position: relative;
     left: 0px;
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: center;
     /* border-left: 5px solid black; */
 }
@@ -63,17 +61,21 @@ a{
     position: relative;
     background: #b06d6d;
     box-shadow: 0 0 7px #b06d6d;
+    margin-top: 10px;
 }
 .chat{
-    margin-top: 1em;
-    height: 30vh;
+    margin-top: 3em;
+    padding: 1em 0 1em 0;
+    height: 50vh;
+    border-top: 5px solid black;
 }
 .wrapper-chat{
     display: grid;
-    grid-template-columns: 7vh 43vh;
+    grid-template-columns: 7vh 45vh;
 }
 .communication{
-    height: 30vh;
+    height: 45vh;
+    margin-left: 1em;
     transition: all ease 1s; 
     /* opacity: 0; */
 }
@@ -88,7 +90,7 @@ a{
 .window-chat{
     border-radius: 15px 15px 0 0;
     border: 1px solid black;
-    height: 25vh;
+    height: 45vh;
     box-shadow: 0 3px 7px black;
     border-bottom: none;
 }
@@ -108,7 +110,33 @@ a{
     transition: all ease 1s; 
 }
 
+.page-one{
+    background: #d4c7c7;
+    padding: 0 1em;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
+/* страница 2 */
+
+
+
+.page-two{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    z-index: 3;
+    background: #d4c7c7;
+    z-index: 1;
+}
 /*  */
 .usually{
     background: url(img/62963crossedswords_109255.png);
@@ -144,4 +172,24 @@ a{
     width: 32px;
     height: 32px;
     margin-right: 5px;
+}
+
+.check-menu{
+    width: 50px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cricle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.active{
+    background: #1f43f2;
 }
